@@ -1,4 +1,4 @@
-# Wingbeat - Call Asynchrony Simulation and Theory
+# Wingbeat-Call Asynchrony Simulation and Theory
 
 This repository provides the full simulation code, analysis scripts, and supporting functions used in the study of **Temporal Precision** built on the **Responsivity Framework** in echolocating bats. It contains modules to explore the temporal dynamics of sonar call timing, wingbeat coordination, and sensory feedback loops in echolocating animals.
 
