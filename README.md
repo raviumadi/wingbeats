@@ -1,11 +1,11 @@
 # Wingbeat-Call Asynchrony Simulation and Theory
 
-This repository provides the full simulation code, analysis scripts, and supporting functions used in the study of **Temporal Precision** built on the **Responsivity Framework** in echolocating bats. It contains modules to explore the temporal dynamics of sonar call timing, wingbeat coordination, and sensory feedback loops in echolocating animals.
+This repository provides the full simulation code, analysis scripts, and supporting functions used in the study of **Temporal Feasibility** built on the **Responsivity Framework** in echolocating bats. It contains modules to explore the temporal dynamics of sonar call timing, wingbeat coordination, and sensory feedback loops in echolocating animals.
 
 This code supports the following manuscripts:
 
-1. [*Biosonar Responsivity Sets the Stage for the Terminal Buzz* ](https://www.biorxiv.org/content/10.1101/2025.06.16.659925v1) 
-2. [*Temporal Precision Necessitates Wingbeat-Call Asynchrony in Actively Echolocating Bats*](https://www.biorxiv.org/content/10.1101/2025.06.18.660328v1)  
+1. [*Biosonar Responsivity Sets the Stage for the Terminal Buzz* ](https://doi.org/10.1101/2025.06.16.659925) 
+2. [*Temporal Feasibility Constraints on Wingbeat-Call Synchrony in Actively Echolocating Bats*](https://doi.org/10.1101/2025.06.18.660328)  
 3. [*Swarm Cohesion in Bats Emerges from Stable Temporal Loops*](https://www.biorxiv.org/content/10.1101/2025.07.05.663265v1)
 
 ---

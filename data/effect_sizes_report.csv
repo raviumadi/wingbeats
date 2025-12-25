@@ -1,0 +1,13 @@
+metric,var,condA,condB,labelA,labelB,diffMedian,diffMedian_CI_low,diffMedian_CI_high,cliffsDelta,cliffsDelta_CI_low,cliffsDelta_CI_high
+Synchronous calls (count),n_sync,1,2,"$f_w$ fixed, $\theta$ fixed","$f_w$ dyn, $\theta$ fixed",13,11,15,0.80005,0.73955,0.8542125
+Synchronous calls (count),n_sync,1,3,"$f_w$ fixed, $\theta$ fixed","$f_w$ dyn, $\theta$ dyn",19,16,22,0.90805,0.871575,0.9406
+Synchronous calls (count),n_sync,2,3,"$f_w$ dyn, $\theta$ fixed","$f_w$ dyn, $\theta$ dyn",6,3,9.5,0.301875,0.19845,0.40955
+Asynchronous calls (count),n_async,1,2,"$f_w$ fixed, $\theta$ fixed","$f_w$ dyn, $\theta$ fixed",-12,-16,-8,-0.449975,-0.546525,-0.3479625
+Asynchronous calls (count),n_async,1,3,"$f_w$ fixed, $\theta$ fixed","$f_w$ dyn, $\theta$ dyn",-17,-20,-14,-0.660725,-0.7332375,-0.581425
+Asynchronous calls (count),n_async,2,3,"$f_w$ dyn, $\theta$ fixed","$f_w$ dyn, $\theta$ dyn",-5,-9,-1,-0.23985,-0.3451875,-0.125575
+Asynchronous calls (fraction),frac_async,1,2,"$f_w$ fixed, $\theta$ fixed","$f_w$ dyn, $\theta$ fixed",-0.255494505494505,-0.268174442190669,-0.243435664814473,-1,-1,-1
+Asynchronous calls (fraction),frac_async,1,3,"$f_w$ fixed, $\theta$ fixed","$f_w$ dyn, $\theta$ dyn",-0.366923076923077,-0.381778428792159,-0.354955242966752,-1,-1,-1
+Asynchronous calls (fraction),frac_async,2,3,"$f_w$ dyn, $\theta$ fixed","$f_w$ dyn, $\theta$ dyn",-0.111428571428571,-0.130925946658705,-0.0939576501686304,-0.7857,-0.841975,-0.7222625
+Calls per wingbeat,calls_per_wb,1,2,"$f_w$ fixed, $\theta$ fixed","$f_w$ dyn, $\theta$ fixed",-0.743486591802325,-0.943746354855367,-0.620346702065656,-0.62485,-0.713325,-0.5337
+Calls per wingbeat,calls_per_wb,1,3,"$f_w$ fixed, $\theta$ fixed","$f_w$ dyn, $\theta$ dyn",-1.14768769257108,-1.34664354866319,-1.04188897620357,-0.8856,-0.93465,-0.82885
+Calls per wingbeat,calls_per_wb,2,3,"$f_w$ dyn, $\theta$ fixed","$f_w$ dyn, $\theta$ dyn",-0.404201100768756,-0.477279749811453,-0.339606532622706,-0.82935,-0.8762,-0.7736
