@@ -1,14 +1,16 @@
-%% analyse_simulation_results.m
-% Proper analysis for Monte-Carlo simulation outputs from results table.
-% Focus: descriptive stats + effect sizes + robustness, not NHST as "proof".
-% Optional permutation tests are provided as model-comparison diagnostics.
+%% analyse_sim_results.m
+% Purpose: analyse Monte Carlo outputs from sim_rand_var_run.m using
+% descriptive summaries, effect sizes, and circular-phase statistics.
+% Inputs: results table in workspace or ../data/simulation_results.mat.
+% Outputs: CSV summary tables plus publication-ready figures.
+% Note: optional permutation testing is provided as a diagnostic only.
 
 clear; clc;
 saveFigs = 1;
 %% Load results
 % Either load from .mat, or assume 'results' is in workspace
 if ~exist('results','var')
-    S = load('simulation_results.mat','results');
+    S = load('../data/simulation_results.mat','results'); % point to the path where you saved the results from sim_rand_var_run.m
     results = S.results;
 end
 
@@ -230,7 +232,7 @@ end
 fprintf('\n=== Circular summaries of async phases ===\n');
 disp(circSummary);
 
-%% ========= 5) PLOTS (JTB-appropriate, no significance stars) =========
+%% ========= 5) PLOTS =========
 hgt = 500;
 len = 400;
 % 5.1 Box + jitter for fraction async

@@ -32,6 +32,8 @@ Ta(1) = 2 * new_target_distance(1) / c;
 delta_t(1) = 0;
 echo_time(1) = delta_t(1) + Ta(1);
 
+k_noise = 0.1; % proportional noise factor (tunable)
+
 call_number = 1;
 done = false;
 
@@ -51,8 +53,14 @@ while ~done
 
     echo_time(call_number + 1) = max(cumsum(delta_t(1:call_number + 1))) + Ta(call_number + 1);
 
+    % --- Prey movement update ---
+    IPI_now = delta_t(call_number + 1);
+    step_nominal = params.initial_velocity * IPI_now;
+
     if params.motile
-        delta_s(call_number) = delta_t(call_number + 1) * params.initial_velocity + randn() / 10;
+        % proportional Gaussian noise, scaled to step size
+        eps_step = k_noise * step_nominal * randn();
+        delta_s(call_number) = step_nominal + eps_step;
     else
         delta_s(call_number) = delta_t(call_number + 1) * params.initial_velocity;
     end

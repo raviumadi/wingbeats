@@ -1,8 +1,15 @@
+%% sim_rand_var_run.m
+% Purpose: run Monte Carlo simulations across three coordination regimes
+% by randomly sampling biologically plausible parameters per run.
+% Inputs: parameter ranges and number of runs are set in this script.
+% Outputs: results table saved to simulation_results.mat for downstream
+% analysis in analyse_sim_results.m.
+
 clear; clc;
 
 %% Global constants
 fs = 192e3;
-bandwidth = 65e3:-100:35e3;
+bandwidth = 65e3:-100:35e3; % choose you bandwidth, critical only if producing the audio
 c = 343;
 n_runs = 200;  % number of repetitions per condition
 
@@ -225,7 +232,7 @@ save('simulation_results.mat','results');
 figHandles = [figure(1), figure(2)];
 fileNames = {'sim_run_boxplots', 'sim_run_hist'};
 
-savePath = '/Users/ravi/Documents/projects/wingbeat/wingbeat_call_synchrony/fig';
+savePath = '.../figures/simulations'; % specify your desired save path here
 
 if ~exist(savePath, 'dir')
     mkdir(savePath); % create directory if it doesn't exist
