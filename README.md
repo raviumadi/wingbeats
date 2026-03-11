@@ -6,7 +6,7 @@ This code supports the following manuscripts:
 
 1. [*Biosonar Responsivity Sets the Stage for the Terminal Buzz* ](https://doi.org/10.1101/2025.06.16.659925)
 2. [*Temporal Feasibility Constraints on Wingbeat-Call Synchrony in Actively Echolocating Bats*](https://doi.org/10.1101/2025.06.18.660328)
-3. [*Swarm Cohesion in Bats Emerges from Stable Temporal Loops*](https://www.biorxiv.org/content/10.1101/2025.07.05.663265v1)
+3. [Probabilistic Sensory Constraints Shape Swarm Cohesion in Echolocating Bats](https://doi.org/10.1101/2025.07.05.663265)
 
 ---
 
